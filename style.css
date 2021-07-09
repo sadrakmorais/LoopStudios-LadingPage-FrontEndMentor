@@ -2,8 +2,236 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+h1{
+
+font-family: 'Josefin Sans', sans-serif;
+}
+p,a{
+  font-family: 'Alata', sans-serif;
+}
+
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
+}
+
+.header{ 
+  background: url(./images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:650px;
+}
+
+.ctn{
+  width:1440px;
+  margin: 0 auto;
+}
+.navbar{
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+  padding-top: 100px;
+  
+}
+
+.menu{
+  display:flex;
+
+}
+.menu li{
+  padding: 0 30px 0 30px;
+  width:30px;
+  height:30px;
+
+}
+.menu li a{
+  color: #fff;
+}
+.menu .ativo a:hover:after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background: #fff;
+}
+
+
+
+.immersive h1{ 
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  width:480px;
+  font-size: 60px;
+  padding:20px 40px;
+  color: #fff;
+  font-weight:normal;
+  margin: 100px 0 0 205px;
+}
+.leader{ 
+  display:flex;
+  padding: 150px 0 200px 300px;
+  
+}
+.leader img{ 
+  width:600px;
+  
+  position: relative;
+}
+.leader .txt{ 
+  padding: 80px;
+  background: #fff;
+  height: 200px;
+  margin: 170px 0 0 480px;
+  position: absolute;
+  animation: show2 2s forwards;
+}
+.txt h1{
+  text-transform: uppercase;
+  width:250px;
+  font-size:30px
+}
+.txt p{ 
+  color:hsl(0, 0%, 41%);
+  width:500px;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+.creations nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.creations nav h1{
+  font-size:60px;
+}
+.creations nav a{
+  border: 2px solid hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 0%);
+  padding: 10px 60px;
+}
+
+.creations .list{
+  display:flex;
+}
+.list a{ 
+  margin: 20px 20px 20px 0;
+}
+
+.list li{
+  max-width: 100%;
+  width:345px;
+  height:600px;
+  border-radius:4%;
+}
+.list li:hover{
+border-radius: 0;
+}
+.list li h1{
+text-align:start;
+  margin-top: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  width:300px;
+  padding: 450px 0 0 50px;
+}
+.l2{
+margin-top: -60px;
+padding-bottom: 100px;
+}
+
+.im1{ 
+  background: url(./images/desktop/image-deep-earth.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.im2{ 
+  background: url(./images/desktop/image-night-arcade.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.im3{ 
+  background: url(./images/desktop/image-soccer-team.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.im4{ 
+  background: url(./images/desktop/image-grid.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.im5{ 
+  background: url(./images/desktop/image-from-above.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.im6{ 
+  background: url(./images/desktop/image-pocket-borealis.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.im7{ 
+  background: url(./images/desktop/image-curiosity.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.im8{ 
+  background: url(./images/desktop/image-fisheye.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer{
+  background: #000;
+
+}
+.footer .nav{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 40px 60px;
+}
+.nav .social{
+  display:flex;
+}
+.social li{
+  margin-right: 20px;
+}
+.footer .footer2{
+  padding: 5px 30px;
+  display:flex;
+  justify-content:space-between;
+}
+.footer2 p{
+  color: #fff;
+  margin-right: 48px;
+}
+.immersive{
+  animation: show 2s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+   
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
+
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
