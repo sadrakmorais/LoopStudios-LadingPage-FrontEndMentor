@@ -28,6 +28,10 @@ p,a{
   width:1440px;
   margin: 0 auto;
 }
+.ctn2{
+  width:1200px;
+  margin: 0 auto;
+}
 .navbar{
   display:flex;
   align-items: center;
@@ -123,8 +127,8 @@ p,a{
 
 .list li{
   max-width: 100%;
-  width:345px;
-  height:600px;
+  width:285px;
+  height:550px;
   border-radius:4%;
 }
 .list li:hover{
